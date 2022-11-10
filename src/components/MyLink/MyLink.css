@@ -1,0 +1,6 @@
+.my_link {
+   text-decoration: none;
+   transition: 0.5s ease;
+   font-size: 1.1em;
+   font-weight: 600;
+}

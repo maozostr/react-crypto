@@ -1,0 +1,153 @@
+.coin_list_actions {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   align-items: center;
+   margin-bottom: 1rem;
+}
+
+.reload_btn {
+   width: max-content;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 0.3rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+
+.search_coin_input {
+   width: 100%;
+}
+
+.search_coin_input:focus {
+   border-color: rgb(251, 251, 251);
+}
+
+.coins_list {
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+}
+
+.coins_list a {
+   text-decoration: none;
+}
+
+.coin_list_item {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   color: white;
+   border-bottom: 1px solid silver;
+   padding-bottom: 0.5rem;
+   padding-top: 0.5rem;
+   padding-left: 0.5rem;
+   transition: 0.2s ease-in-out;
+}
+
+
+.coin_list_item:hover {
+   background-color: rgb(83, 78, 71);
+   cursor: pointer;
+}
+
+.coin_list_item_headers {
+   font-weight: 700;
+}
+
+
+.coin_list_item .coin_list_item_span {
+   flex: 1;
+}
+
+
+
+.coin_info_header {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
+.coin_info_price {
+   margin-left: auto;
+}
+
+.coin_info_categories {
+   font-weight: 600;
+}
+
+.coin_info_header h2 {}
+
+.coin_info_description a {
+   font-weight: 600;
+   font-size: 1.1em;
+   text-decoration: none;
+   color: crimson;
+}
+
+.coin_info_links a {
+   color: aqua;
+}
+
+
+.chart_container {
+   animation: fade-in 0.5s;
+   min-height: 450px;
+   margin-bottom: 1.5rem;
+}
+
+.cart_actions {
+   display: flex;
+}
+
+.cart_actions select {
+   margin-left: auto;
+}
+
+
+
+/* GENERAL INFO  */
+
+.general_info_container {
+   /* display: flex;
+   justify-content: space-between; */
+}
+
+.general_info_container ul {
+   margin-bottom: 2.5rem;
+}
+
+
+
+
+.general_info_market_cap_percentage_list,
+.general_info_total_market_cup_list {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 1rem;
+}
+
+.general_info_total_market_cup_list li, .general_info_market_cap_percentage_list li {
+   display: flex;
+   align-items: center;
+   /* background-color: #2a3f76; */
+   /* border-bottom: 1.5px solid #2a3f76; */
+   border-bottom: 1px solid silver;
+   gap: 0.5rem;
+   color: white;
+   padding: 0.5rem;
+
+}
+
+.general_info_total_market_cup_list li span:last-child, .general_info_market_cap_percentage_list li span:last-child {
+   margin-left: auto;
+}
+
+@media (max-width: 768px) {
+
+   .general_info_market_cap_percentage_list,
+   .general_info_total_market_cup_list {
+      grid-template-columns: 1fr;
+   }
+}

@@ -1,0 +1,19 @@
+.layout_container {
+   min-height: 100vh;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 0 5rem;
+   grid-template-rows: 10vh auto auto;
+}
+
+@media (max-width: 768px) {
+   .layout_container {
+      margin: 0 2rem;
+   }
+}
+
+@media (max-width: 550px) {
+   .layout_container {
+      margin: 0 0.5rem;
+   }
+}
